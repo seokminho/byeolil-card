@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: #121212; color: #f5f2ee; font-family: 'Gothic A1', sans-serif; word-break: keep-all; }
+.wrap { max-width: 420px; margin: 0 auto; padding: 32px 20px; display: flex; flex-direction: column; gap: 20px; }
+.card { position: relative; padding: 30px 28px 56px; min-height: 360px; border-radius: 40px; display: flex; flex-direction: column; gap: 14px; background: #5fd9b5; color: #121212; }
+.card.is-kkandol { background: #121212; color: #f5f2ee; outline: 2px solid #ff7a3d; outline-offset: -8px; }
+.tag { align-self: flex-start; padding: 5px 12px; border-radius: 13px; font-size: 12px; font-weight: 800; background: #121212; color: #5fd9b5; }
+.is-kkandol .tag { background: #ff7a3d; color: #121212; }
+.to { margin: 0; font-size: 14px; font-weight: 800; color: #134a3b; }
+.is-kkandol .to { color: #cfc9c2; }
+.line { margin: 10px 0 0; font-family: 'Black Han Sans', 'Gothic A1', sans-serif; font-size: 28px; line-height: 1.45; }
+.brand { position: absolute; left: 0; right: 0; bottom: 22px; text-align: center; font-size: 12px; font-weight: 700; opacity: 0.7; }
+.msg { margin: 0; text-align: center; font-size: 15px; font-weight: 700; color: #cfc9c2; }
+.cta { display: flex; flex-direction: column; gap: 10px; align-items: stretch; }
+.btn { display: flex; align-items: center; justify-content: center; height: 54px; border-radius: 27px; background: #ff7a3d; color: #121212; font-size: 16px; font-weight: 800; text-decoration: none; }
+.note { margin: 0; text-align: center; font-size: 13px; font-weight: 700; color: #a9a29a; }
+@media (prefers-reduced-motion: no-preference) { .card { animation: pop 0.45s cubic-bezier(0.2, 1.4, 0.4, 1) both; } @keyframes pop { from { transform: scale(0.92); opacity: 0; } to { transform: none; opacity: 1; } } }
